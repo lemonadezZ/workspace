@@ -35,7 +35,7 @@ WORKDIR ${workspace}
 RUN /usr/local/openresty/bin/resty -v
 RUN yum install -y http://www.percona.com/downloads/percona-release/redhat/0.1-3/percona-release-0.1-3.noarch.rpm
 RUN yum install  -y Percona-Server-server-57
-RUN 
+EXPOSE 80 3306
 #安装 mysql
 #安装 nginx
 #启动 php-fpm  mysql nginx  命令
